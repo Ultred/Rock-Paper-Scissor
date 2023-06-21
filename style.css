@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Montserrat";
+  background-color: #5f5be7;
+}
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+}
+section {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.section-click {
+  width: 100%;
+  max-width: 600px;
+  background-color: antiquewhite;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 4rem;
+  padding: 2rem 0;
+  margin: 1rem 0;
+  border: solid black 2px;
+}
+i {
+  cursor: pointer;
+  font-size: 6rem;
+}
+i:hover {
+  outline: solid 2px black;
+}
+.icon.clicked {
+  transition: ease-in-out all 0.4s;
+  outline: solid 2px black;
+}
+.playerpick {
+  cursor: pointer;
+}
+.lives {
+  margin: 0.2rem 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.endgame {
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: ease-in-out all 0.4s;
+  z-index: 20;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(74, 74, 255);
+  display: flex;
+  font-size: 4rem;
+  padding: 2rem 1rem;
+  border: 2px solid rgb(12, 12, 80);
+  flex-direction: column;
+}
+.endgame button {
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0.5em 1em;
+}
+.endgame.last {
+  left: 50%;
+  opacity: 1;
+  pointer-events: all;
+}

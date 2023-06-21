@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Rock Paper Scissor</title>
+  </head>
+  <body>
+    <section>
+      <div class="endgame">
+        <span id="endgameText">HELLO</span>
+        <a href="index.html"><button>PLAY AGAIN</button></a>
+      </div>
+      <h1>ROCK | PAPER | SCISSOR</h1>
+      <div class="lives">
+        <p>Your Live: <span id="userLive">5</span></p>
+        <p>Computer Lives: <span id="computerLive">5</span></p>
+      </div>
+      <div class="section-click">
+        <i id="rock" class="fa-solid fa-hand-back-fist fa-beat icon"></i>
+        <i id="paper" class="fa-solid fa-hand fa-beat icon"></i>
+        <i id="scissor" class="fa-solid fa-hand-scissors fa-beat icon"></i>
+      </div>
+      <h1>Result</h1>
+      <div class="section-click" id="result">
+        <div id="playerpick"></div>
+        <div id="VS"></div>
+        <div id="computerpick"></div>
+      </div>
+      <div id="resultOutput"></div>
+    </section>
+    <script src="indes.js"></script>
+  </body>
+</html>
